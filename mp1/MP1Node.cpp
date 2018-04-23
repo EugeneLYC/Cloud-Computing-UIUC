@@ -218,6 +218,41 @@ bool MP1Node::recvCallBack(void *env, char *data, int size ) {
 	/*
 	 * Your code goes here
 	 */
+     
+    auto *msg = (MessageHdr *) data;
+    char *msgContent = data + sizeof(MessageHdr);
+    auto *source = (Address *) msgContent;
+
+    if (msg->msgType == JOINREQ) {
+        //updateMembershipList(id, port, heartbeat, timestamp)
+        updateMemebershipList(*(int *)(source->addr), 
+                                *(short *)(source->addr + 4), 
+                                    *(long *)(msgContent + sizeof(Address) + 1),
+                                        par.getcurrtime());
+
+        size_t replySize = sizeof(MessageHdr)+sizeof(Address)+sizeof(long)
+        auto *replyMsg = (MessageHdr *)malloc(replySize);
+        replyMsg->msgType = JOINREQ;
+
+
+        memcpy((char *)(replyMsg + sizeof(MessageHdr)), &(memberNode->addr), sizeof(Address));
+        memcpy((char *)(replyMsg + sizeof(MessageHdr) + sizeof(Address)), &(memberNode->heartbeat), sizeof(long));
+
+        emulNet->ENsend(&memberNode->addr, source, (char *) replyMsg, replySize);
+        free(replyMsg);
+    }
+
+    if (msg->msgType == JOINREP) {
+        updateMemebershipList(*(int *)(source->addr), 
+                                *(short *)(source->addr + 4), 
+                                    *(long *)(msgContent + sizeof(Address) + 1),
+                                        par.getcurrtime());
+        memberNode->inGroup = true;
+    }
+
+    if (msg->msgType == PING) {
+        
+    }
 }
 
 /**
@@ -232,8 +267,10 @@ void MP1Node::nodeLoopOps() {
 	/*
 	 * Your code goes here
 	 */
+    //whrther the node needs
+    
 
-    return;
+    
 }
 
 /**
