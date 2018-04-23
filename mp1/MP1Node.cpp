@@ -227,7 +227,7 @@ bool MP1Node::recvCallBack(void *env, char *data, int size ) {
         //updateMembershipList(id, port, heartbeat, timestamp)
         updateMemebershipList(*(int *)(source->addr), 
                                 *(short *)(source->addr + 4), 
-                                    *(long *)(msgContent + sizeof(Address) + 1),
+                                    *(long *)(msgContent + sizeof(Address)),
                                         par.getcurrtime());
 
         size_t replySize = sizeof(MessageHdr)+sizeof(Address)+sizeof(long)
@@ -245,13 +245,13 @@ bool MP1Node::recvCallBack(void *env, char *data, int size ) {
     if (msg->msgType == JOINREP) {
         updateMemebershipList(*(int *)(source->addr), 
                                 *(short *)(source->addr + 4), 
-                                    *(long *)(msgContent + sizeof(Address) + 1),
+                                    *(long *)(msgContent + sizeof(Address)),
                                         par.getcurrtime());
         memberNode->inGroup = true;
     }
 
     if (msg->msgType == PING) {
-        
+
     }
 }
 
@@ -267,10 +267,83 @@ void MP1Node::nodeLoopOps() {
 	/*
 	 * Your code goes here
 	 */
-    //whrther the node needs
-    
+    if (memberNode->pingCounter == 0) {
+        memberNode->heartbeat++;
+        memberNode->pingCounter = TFAIL;
+        pingOtherNodes();
+    }
+    else {
+        memberNode->pingCounter--;
+    }
 
-    
+}
+
+/**
+ * FUNCTION NAME: updateMembershipList(id, port, heartbeat, timestamp)
+ * 
+ * DESCRIPTION: Update the membership list based on the ping msg received
+ *
+ *
+ */
+void MP1Node::updateMembershipList(int id, int port, long heartbeat, long timestamp) {
+
+    for (std::vector<MessageListEntry>::iterator it = memberNode->memberList.begin();it != memberNode->memberList.end();it++) {
+        if (it->getid() == id && it->getport() == port) {
+            
+            //check if the node is failed
+            if (heartbeat == -1) {
+                it->setheartbeat(-1);
+                return;
+            }
+
+            //check if the node is already failed according to the local record
+            if (it->getheartbeat() == -1) {
+                return;
+            }
+
+            if (it->getheartbeat() < heartbeat) {
+                it->setheartbeat(heartbeat);
+                it->settimestamp(par->getcurrtime());
+                return;
+            }
+        }
+    }
+
+    //not in local list
+    if (heartbeat != -1) {
+        MessageListEntry newMember = MessageListEntry(id, port, heartbeat, timestamp);
+        memberNode->memberList.push_back(newMember);
+    }
+}
+
+
+/**
+ * FUNCTION NAME: pingOtherNodes()
+ * 
+ * DESCRIPTION: Let the node ping other nodes in the group
+ *
+ *
+ */
+bool MP1Node::pingOtherNodes() {
+    size_t msgSize = sizeof(MessageHdr) + (sizeof(Address) + sizeof(long))*memberNode.memberList.size();
+    MessageHdr *msgData = (MessageHdr *)malloc(msgSize);
+    msgData->msgType = PING;
+
+    SerializeData((char *)msgData);
+
+    for (std::vector<MessageListEntry>::iterator it = memberNode->memberList.begin(); 
+                                            it != memberNode->memberList.end(); it++) {
+        //get destination's address from id and port
+        Address destination;
+        memset(&destination.addr, it->getid(), sizeof(int));
+        memset(&destination.addr[4], it->getport(), sizeof(short));
+
+        //send the ping msg
+        emulNet.ENsend(&memberNode->addr, &destination, (char *)msgData, msgSize);
+    }
+
+    free(msgData);
+    return true;
 }
 
 /**
