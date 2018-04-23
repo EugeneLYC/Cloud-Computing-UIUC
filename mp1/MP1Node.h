@@ -20,7 +20,6 @@
  */
 #define TREMOVE 20
 #define TFAIL 5
-#define TPING 3
 
 /*
  * Note: You can change/add any functions in MP1Node.{h,cpp}
@@ -82,6 +81,8 @@ public:
 	//My own functions
 	void pingOtherNodes();
 	bool updateMembershipList(int id, int port, long heartbeat, long timestamp);
+	char* SerializeData(char* buffer);
+	vector<MemberListEntry> DeserializeData(char* table, int rows);
 
 	
 };
