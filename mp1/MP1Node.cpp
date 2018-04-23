@@ -163,6 +163,7 @@ int MP1Node::finishUpThisNode(){
    /*
     * Your code goes here
     */
+    return 1;
 }
 
 /**
@@ -214,7 +215,7 @@ void MP1Node::checkMessages() {
  *
  * DESCRIPTION: Message handler for different message types
  */
-bool MP1Node::recvCallBack(void *env, char *data, int size ) {
+void MP1Node::recvCallBack(void *env, char *data, int size ) {
 	/*
 	 * Your code goes here
 	 */
@@ -225,7 +226,7 @@ bool MP1Node::recvCallBack(void *env, char *data, int size ) {
 
     if (msg->msgType == JOINREQ) {
         //updateMembershipList(id, port, heartbeat, timestamp)
-        updateMemebershipList(*(int *)(source->addr), 
+        updateMembershipList(*(int *)(source->addr), 
                                 *(short *)(source->addr + 4), 
                                     *(long *)(msgContent + sizeof(Address)),
                                         par.getcurrtime());
@@ -243,7 +244,7 @@ bool MP1Node::recvCallBack(void *env, char *data, int size ) {
     }
 
     if (msg->msgType == JOINREP) {
-        updateMemebershipList(*(int *)(source->addr), 
+        updateMembershipList(*(int *)(source->addr), 
                                 *(short *)(source->addr + 4), 
                                     *(long *)(msgContent + sizeof(Address)),
                                         par.getcurrtime());
@@ -251,7 +252,15 @@ bool MP1Node::recvCallBack(void *env, char *data, int size ) {
     }
 
     if (msg->msgType == PING) {
+        //somthing
+        int totalSize = (int)(size - sizeof(MessageHdr));
+        int rowSize = (int)(sizeof(Address) + sizeof(long));
 
+        vector<MemberListEntry> receivedList = DeserializeData(msgContent, totalSize/rowSize);
+
+        for (std::vector<MemberListEntry>::iterator it = receivedList.begin();it != receivedList.end();it++) {
+            updateMembershipList(it->getid(), it->getport(), it->getheartbeat(), it->gettimestamp());
+        }
     }
 }
 
@@ -344,6 +353,68 @@ bool MP1Node::pingOtherNodes() {
 
     free(msgData);
     return true;
+}
+
+/**
+ * FUNCTION NAME: SerializeData()
+ *
+ * DESCRIPTION: This fuction is used for serializing the membership list before ping it to the other nodes. 
+ */
+
+char* MP1Node::SerializeData(char* buffer) {
+    int blockIndex = 0;
+    size_t blockSize = sizeof(Address) + sizeof(long);
+
+    for (std::vector<MemberListEntry>::iterator it = memberNode->memberList.begin();it != memberNode->memberList.end();
+                it++, blockIndex += entrySize) {
+        char *block = (char *)malloc((int)blockSize);
+        
+        Address addrTobeSent;
+        memset(&addrTobeSent.addr, it->getid(), sizeof(int));
+        memset(&addrTobeSent.addr[4], it->getport(), sizeof(short));
+
+        memcpy(block, &addrTobeSent, sizeof(Address));
+        memcpy(block + sizeof(Address), &(it->getheartbeat()), sizeof(long));
+
+        memcpy(buffer + blockIndex, block, blockSize);
+        free(block);
+    }
+    return buffer;
+}
+
+
+ /**
+ * FUNCTION NAME: DeserializeData()
+ *
+ * DESCRIPTION: This function is the opposite process of serialization
+ */
+
+vector<MemberListEntry> MP1Node::DeserializeData(char* table, int rows) {
+    vector<MemberListEntry> returnList;
+    int blockSize = sizeof(Address) + sizeof(long);
+    MemberListEntry block;
+
+    for (int i = 0;i < rows; i++, table += blockSize) {
+
+        Address *address = (Address *)(table);
+        int ansId;
+        short ansPort;
+        long ansHeartbeat;
+
+        memcpy(&ansId, &address.addr, sizeof(int));
+        memcpy(&ansPort, &address.addr[4], sizeof(short));
+        memcpy(&ansHeartbeat, table + sizeof(Address), sizeof(long));
+
+        block.setid(ansId);
+        block.setport(ansPort);
+        block.setheartbeat(ansHeartbeat);
+        block.settimestamp(par->getcurrtime());
+
+        MemberListEntry result = MemberListEntry(block);
+        returnList.push_back(result);
+
+    }
+    return returnList;
 }
 
 /**
