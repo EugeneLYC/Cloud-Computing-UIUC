@@ -20,6 +20,7 @@
  */
 #define TREMOVE 20
 #define TFAIL 5
+#define TPING 3
 
 /*
  * Note: You can change/add any functions in MP1Node.{h,cpp}
@@ -31,6 +32,7 @@
 enum MsgTypes{
     JOINREQ,
     JOINREP,
+    PING,
     DUMMYLASTMSGTYPE
 };
 
@@ -76,6 +78,12 @@ public:
 	void initMemberListTable(Member *memberNode);
 	void printAddress(Address *addr);
 	virtual ~MP1Node();
+
+	//My own functions
+	void pingOtherNodes();
+	bool updateMembershipList(int id, int port, long heartbeat, long timestamp);
+
+	
 };
 
 #endif /* _MP1NODE_H_ */
