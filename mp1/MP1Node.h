@@ -75,12 +75,13 @@ public:
 	int isNullAddress(Address *addr);
 	Address getJoinAddress();
 	void initMemberListTable(Member *memberNode);
+    void initMemberListTable(Member *memberNode, int id, short port);
 	void printAddress(Address *addr);
 	virtual ~MP1Node();
 
 	//My own functions
-	void pingOtherNodes();
-	bool updateMembershipList(int id, int port, long heartbeat, long timestamp);
+	bool pingOtherNodes();
+	void updateMembershipList(int id, int port, long heartbeat, long timestamp);
 	char* SerializeData(char* buffer);
 	vector<MemberListEntry> DeserializeData(char* table, int rows);
 
