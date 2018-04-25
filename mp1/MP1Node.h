@@ -84,7 +84,8 @@ public:
 	void updateMembershipList(int id, int port, long heartbeat, long timestamp);
 	char* SerializeData(char* buffer);
 	vector<MemberListEntry> DeserializeData(char* table, int rows);
-
+        void checkFailure();
+        Address getAddress(int id, short port);
 	
 };
 
