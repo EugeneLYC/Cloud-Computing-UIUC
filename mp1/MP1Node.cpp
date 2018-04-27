@@ -113,12 +113,6 @@ int MP1Node::initThisNode(Address *joinaddr) {
     return 0;
 }
 
-void MP1Node::initMemberListTable(Member *memberNode, int id, short port) {
-    memberNode->memberList.clear();
-    MemberListEntry me = MemberListEntry(id, port, memberNode->heartbeat, par->getcurrtime());
-    memberNode->memberList.push_back(me);
-}
-
 /**
  * FUNCTION NAME: introduceSelfToGroup
  *
@@ -224,10 +218,10 @@ bool MP1Node::recvCallBack(void *env, char *data, int size) {
 	 * Your code goes here
 	 */
      
-    auto *msg = (MessageHdr *) data;
+    MessageHdr *msg = (MessageHdr *) data;
     char *msgContent = data + sizeof(MessageHdr);
     MsgTypes typeOfMsg = msg->msgType;
-    auto *source = (Address *) msgContent;
+    Address *source = (Address *) msgContent;
 
     if (typeOfMsg == JOINREQ) {
         //updateMembershipList(id, port, heartbeat, timestamp)
@@ -237,7 +231,7 @@ bool MP1Node::recvCallBack(void *env, char *data, int size) {
                                         par->getcurrtime());
 
         size_t replySize = sizeof(MessageHdr)+sizeof(Address)+sizeof(long)+1;
-        auto *replyMsg = (MessageHdr *)malloc(replySize);
+        MessageHdr *replyMsg = (MessageHdr *)malloc(replySize);
         replyMsg->msgType = JOINREP;
 
 
@@ -259,8 +253,8 @@ bool MP1Node::recvCallBack(void *env, char *data, int size) {
     else if (typeOfMsg == PING) {
         //somthing
         size_t msgContentSize = size - sizeof(MessageHdr);
-        auto totalSize = (int)(msgContentSize);
-        auto rowSize = (int)(sizeof(Address) + sizeof(long));
+        int totalSize = (int)(msgContentSize);
+        int rowSize = (int)(sizeof(Address) + sizeof(long));
 
         vector<MemberListEntry> receivedList = DeserializeData(msgContent, totalSize/rowSize);
 
@@ -357,8 +351,16 @@ void MP1Node::updateMembershipList(int id, short port, long heartbeat, long time
     }
     MemberListEntry newMember = MemberListEntry(id, port, heartbeat, timestamp);
     memberNode->memberList.push_back(newMember);
+#ifdef DEBUGLOG
+    log->logNodeAdd(&memberNode->addr, &entry_address);
+#endif
 }
 
+void MP1Node::initMemberListTable(Member *memberNode, int id, short port) {
+    memberNode->memberList.clear();
+    MemberListEntry me = MemberListEntry(id, port, memberNode->heartbeat, par->getcurrtime());
+    memberNode->memberList.push_back(me);
+}
 
 /**
  * FUNCTION NAME: pingOtherNodes()
@@ -369,7 +371,7 @@ void MP1Node::updateMembershipList(int id, short port, long heartbeat, long time
  */
 bool MP1Node::pingOtherNodes() {
     size_t msgSize = sizeof(MessageHdr) + ((sizeof(Address) + sizeof(long))*memberNode->memberList.size());
-    auto *msgData = (MessageHdr *)malloc(msgSize);
+    MessageHdr *msgData = (MessageHdr *)malloc(msgSize);
     msgData->msgType = PING;
 
     SerializeData((char *)(msgData+1));
@@ -397,7 +399,7 @@ bool MP1Node::pingOtherNodes() {
 char* MP1Node::SerializeData(char* buffer) {
     int blockIndex = 0;
     size_t blockSize = sizeof(Address) + sizeof(long);
-    auto *block = (char *)malloc((int)(blockSize));
+    char *block = (char *)malloc((int)(blockSize));
 
     for (std::vector<MemberListEntry>::iterator it = memberNode->memberList.begin();it != memberNode->memberList.end();
                 it++, blockIndex += blockSize) {
@@ -427,7 +429,7 @@ vector<MemberListEntry> MP1Node::DeserializeData(char* table, int rows) {
 
     for (int i = 0;i < rows; i++, table += blockSize) {
 
-        auto *address = (Address *) table;
+        Address *address = (Address *) table;
         int ansId;
         short ansPort;
         long ansHeartbeat;
