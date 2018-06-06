@@ -20,7 +20,7 @@
  */
 #define TREMOVE 20
 #define TFAIL 5
-
+#define TPING 2
 /*
  * Note: You can change/add any functions in MP1Node.{h,cpp}
  */
@@ -31,6 +31,7 @@
 enum MsgTypes{
     JOINREQ,
     JOINREP,
+    PING,
     DUMMYLASTMSGTYPE
 };
 
@@ -73,9 +74,18 @@ public:
 	void nodeLoopOps();
 	int isNullAddress(Address *addr);
 	Address getJoinAddress();
-	void initMemberListTable(Member *memberNode);
+        void initMemberListTable(Member *memberNode, int id, short port);
 	void printAddress(Address *addr);
 	virtual ~MP1Node();
+
+	//My own functions
+	bool pingOtherNodes();
+	void updateMembershipList(int id, short port, long heartbeat, long timestamp);
+	char* SerializeData(char* buffer);
+	vector<MemberListEntry> DeserializeData(char* table, int rows);
+        void CheckFailure();
+        Address getAddress(int id, short port);
+	
 };
 
 #endif /* _MP1NODE_H_ */

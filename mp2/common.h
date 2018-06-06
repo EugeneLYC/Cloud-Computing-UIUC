@@ -5,7 +5,7 @@
  * Global variable
  */
 // Transaction Id
-static int g_transID = 0;
+static int g_transID = -1;
 
 // message types, reply is the message from node to coordinator
 enum MessageType {CREATE, READ, UPDATE, DELETE, REPLY, READREPLY};

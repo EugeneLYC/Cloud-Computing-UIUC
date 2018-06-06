@@ -1,0 +1,371 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+handler	/home/eugene/Cloud-Computing-UIUC/mp2/Application.cpp	/^void handler(int sig) {$/;"	function	line:9	signature:(int sig)
+main	/home/eugene/Cloud-Computing-UIUC/mp2/Application.cpp	/^int main(int argc, char *argv[]) {$/;"	function	line:27	signature:(int argc, char *argv[])
+Application	/home/eugene/Cloud-Computing-UIUC/mp2/Application.cpp	/^Application::Application(char *infile) {$/;"	function	line:47	class:Application	signature:(char *infile)
+~Application	/home/eugene/Cloud-Computing-UIUC/mp2/Application.cpp	/^Application::~Application() {$/;"	function	line:79	class:Application	signature:()
+run	/home/eugene/Cloud-Computing-UIUC/mp2/Application.cpp	/^int Application::run()$/;"	function	line:97	class:Application	signature:()
+mp1Run	/home/eugene/Cloud-Computing-UIUC/mp2/Application.cpp	/^void Application::mp1Run() {$/;"	function	line:139	class:Application	signature:()
+mp2Run	/home/eugene/Cloud-Computing-UIUC/mp2/Application.cpp	/^void Application::mp2Run() {$/;"	function	line:192	class:Application	signature:()
+fail	/home/eugene/Cloud-Computing-UIUC/mp2/Application.cpp	/^void Application::fail() {$/;"	function	line:336	class:Application	signature:()
+getjoinaddr	/home/eugene/Cloud-Computing-UIUC/mp2/Application.cpp	/^Address Application::getjoinaddr(void){$/;"	function	line:372	class:Application	signature:(void)
+findARandomNodeThatIsAlive	/home/eugene/Cloud-Computing-UIUC/mp2/Application.cpp	/^int Application::findARandomNodeThatIsAlive() {$/;"	function	line:387	class:Application	signature:()
+initTestKVPairs	/home/eugene/Cloud-Computing-UIUC/mp2/Application.cpp	/^void Application::initTestKVPairs() {$/;"	function	line:400	class:Application	signature:()
+insertTestKVPairs	/home/eugene/Cloud-Computing-UIUC/mp2/Application.cpp	/^void Application::insertTestKVPairs() {$/;"	function	line:422	class:Application	signature:()
+deleteTest	/home/eugene/Cloud-Computing-UIUC/mp2/Application.cpp	/^void Application::deleteTest() {$/;"	function	line:447	class:Application	signature:()
+readTest	/home/eugene/Cloud-Computing-UIUC/mp2/Application.cpp	/^void Application::readTest() {$/;"	function	line:483	class:Application	signature:()
+updateTest	/home/eugene/Cloud-Computing-UIUC/mp2/Application.cpp	/^void Application::updateTest() {$/;"	function	line:727	class:Application	signature:()
+contains	/home/eugene/Cloud-Computing-UIUC/mp2/KVStoreGrader.sh	/^function contains () {$/;"	function	line:13
+_STDINCLUDES_H_	/home/eugene/Cloud-Computing-UIUC/mp2/stdincludes.h	/^#define _STDINCLUDES_H_$/;"	macro	line:8
+RING_SIZE	/home/eugene/Cloud-Computing-UIUC/mp2/stdincludes.h	/^#define RING_SIZE /;"	macro	line:13
+FAILURE	/home/eugene/Cloud-Computing-UIUC/mp2/stdincludes.h	/^#define FAILURE /;"	macro	line:14
+SUCCESS	/home/eugene/Cloud-Computing-UIUC/mp2/stdincludes.h	/^#define SUCCESS /;"	macro	line:15
+STDCLLBKARGS	/home/eugene/Cloud-Computing-UIUC/mp2/stdincludes.h	/^#define STDCLLBKARGS /;"	macro	line:41
+STDCLLBKRET	/home/eugene/Cloud-Computing-UIUC/mp2/stdincludes.h	/^#define STDCLLBKRET	/;"	macro	line:42
+DEBUGLOG	/home/eugene/Cloud-Computing-UIUC/mp2/stdincludes.h	/^#define DEBUGLOG /;"	macro	line:43
+TRACE_H_	/home/eugene/Cloud-Computing-UIUC/mp2/Trace.h	/^#define TRACE_H_$/;"	macro	line:8
+LOG_FILE_LOCATION	/home/eugene/Cloud-Computing-UIUC/mp2/Trace.h	/^#define LOG_FILE_LOCATION /;"	macro	line:15
+Trace	/home/eugene/Cloud-Computing-UIUC/mp2/Trace.h	/^class Trace {$/;"	class	line:22
+logF	/home/eugene/Cloud-Computing-UIUC/mp2/Trace.h	/^	FILE *logF;$/;"	member	line:24	class:Trace
+traceFileCreate	/home/eugene/Cloud-Computing-UIUC/mp2/Trace.cpp	/^int Trace::traceFileCreate() {$/;"	function	line:30	class:Trace	signature:()
+printToTrace	/home/eugene/Cloud-Computing-UIUC/mp2/Trace.cpp	/^int Trace::printToTrace(char *keyMsg, char *valueMsg) {$/;"	function	line:58	class:Trace	signature:(char *keyMsg, char *valueMsg)
+traceFileClose	/home/eugene/Cloud-Computing-UIUC/mp2/Trace.cpp	/^int Trace::traceFileClose() {$/;"	function	line:78	class:Trace	signature:()
+funcEntry	/home/eugene/Cloud-Computing-UIUC/mp2/Trace.cpp	/^int Trace::funcEntry(char *funcName) {$/;"	function	line:101	class:Trace	signature:(char *funcName)
+funcExit	/home/eugene/Cloud-Computing-UIUC/mp2/Trace.cpp	/^int Trace::funcExit(char *funcName, int f_rc) {$/;"	function	line:126	class:Trace	signature:(char *funcName, int f_rc)
+Message	/home/eugene/Cloud-Computing-UIUC/mp2/Message.cpp	/^Message::Message(string message){$/;"	function	line:17	class:Message	signature:(string message)
+Message	/home/eugene/Cloud-Computing-UIUC/mp2/Message.cpp	/^Message::Message(int _transID, Address _fromAddr, MessageType _type, string _key, string _value, ReplicaType _replica){$/;"	function	line:62	class:Message	signature:(int _transID, Address _fromAddr, MessageType _type, string _key, string _value, ReplicaType _replica)
+Message	/home/eugene/Cloud-Computing-UIUC/mp2/Message.cpp	/^Message::Message(const Message& anotherMessage) {$/;"	function	line:75	class:Message	signature:(const Message& anotherMessage)
+Message	/home/eugene/Cloud-Computing-UIUC/mp2/Message.cpp	/^Message::Message(int _transID, Address _fromAddr, MessageType _type, string _key, string _value){$/;"	function	line:89	class:Message	signature:(int _transID, Address _fromAddr, MessageType _type, string _key, string _value)
+Message	/home/eugene/Cloud-Computing-UIUC/mp2/Message.cpp	/^Message::Message(int _transID, Address _fromAddr, MessageType _type, string _key){$/;"	function	line:102	class:Message	signature:(int _transID, Address _fromAddr, MessageType _type, string _key)
+Message	/home/eugene/Cloud-Computing-UIUC/mp2/Message.cpp	/^Message::Message(int _transID, Address _fromAddr, MessageType _type, bool _success){$/;"	function	line:114	class:Message	signature:(int _transID, Address _fromAddr, MessageType _type, bool _success)
+Message	/home/eugene/Cloud-Computing-UIUC/mp2/Message.cpp	/^Message::Message(int _transID, Address _fromAddr, string _value){$/;"	function	line:126	class:Message	signature:(int _transID, Address _fromAddr, string _value)
+toString	/home/eugene/Cloud-Computing-UIUC/mp2/Message.cpp	/^string Message::toString(){$/;"	function	line:139	class:Message	signature:()
+operator =	/home/eugene/Cloud-Computing-UIUC/mp2/Message.cpp	/^Message& Message::operator =(const Message& anotherMessage) {$/;"	function	line:166	class:Message	signature:(const Message& anotherMessage)
+NullDevice	/home/eugene/Cloud-Computing-UIUC/mp2/submit.py	/^class NullDevice:$/;"	class	line:25
+write	/home/eugene/Cloud-Computing-UIUC/mp2/submit.py	/^  def write(self, s):$/;"	member	line:26	class:NullDevice
+submit	/home/eugene/Cloud-Computing-UIUC/mp2/submit.py	/^def submit():   $/;"	function	line:29
+loginPrompt	/home/eugene/Cloud-Computing-UIUC/mp2/submit.py	/^def loginPrompt():$/;"	function	line:46
+basicPrompt	/home/eugene/Cloud-Computing-UIUC/mp2/submit.py	/^def basicPrompt():$/;"	function	line:52
+partPrompt	/home/eugene/Cloud-Computing-UIUC/mp2/submit.py	/^def partPrompt():$/;"	function	line:58
+submit_url	/home/eugene/Cloud-Computing-UIUC/mp2/submit.py	/^def submit_url():$/;"	function	line:69
+submitSolution	/home/eugene/Cloud-Computing-UIUC/mp2/submit.py	/^def submitSolution(email_address, password, submissions):$/;"	function	line:73
+source	/home/eugene/Cloud-Computing-UIUC/mp2/submit.py	/^def source(partIdx):$/;"	function	line:103
+cleanup	/home/eugene/Cloud-Computing-UIUC/mp2/submit.py	/^def cleanup():$/;"	function	line:110
+akey	/home/eugene/Cloud-Computing-UIUC/mp2/submit.py	/^akey = 'Lm64BvbLEeWEJw5JS44kjw'$/;"	variable	line:119
+partIds	/home/eugene/Cloud-Computing-UIUC/mp2/submit.py	/^partIds = ['PH3Q7', 'PIXym', 'mUKdC', 'peNB6']$/;"	variable	line:122
+partFriendlyNames	/home/eugene/Cloud-Computing-UIUC/mp2/submit.py	/^partFriendlyNames = ['Create Test', 'Delete Test', 'Read Test', 'Update Test'] $/;"	variable	line:124
+_PARAMS_H_	/home/eugene/Cloud-Computing-UIUC/mp2/Params.h	/^#define _PARAMS_H_$/;"	macro	line:8
+testTYPE	/home/eugene/Cloud-Computing-UIUC/mp2/Params.h	/^enum testTYPE { CREATE_TEST, READ_TEST, UPDATE_TEST, DELETE_TEST };$/;"	enum	line:14
+CREATE_TEST	/home/eugene/Cloud-Computing-UIUC/mp2/Params.h	/^enum testTYPE { CREATE_TEST, READ_TEST, UPDATE_TEST, DELETE_TEST };$/;"	enumerator	line:14	enum:testTYPE
+READ_TEST	/home/eugene/Cloud-Computing-UIUC/mp2/Params.h	/^enum testTYPE { CREATE_TEST, READ_TEST, UPDATE_TEST, DELETE_TEST };$/;"	enumerator	line:14	enum:testTYPE
+UPDATE_TEST	/home/eugene/Cloud-Computing-UIUC/mp2/Params.h	/^enum testTYPE { CREATE_TEST, READ_TEST, UPDATE_TEST, DELETE_TEST };$/;"	enumerator	line:14	enum:testTYPE
+DELETE_TEST	/home/eugene/Cloud-Computing-UIUC/mp2/Params.h	/^enum testTYPE { CREATE_TEST, READ_TEST, UPDATE_TEST, DELETE_TEST };$/;"	enumerator	line:14	enum:testTYPE
+Params	/home/eugene/Cloud-Computing-UIUC/mp2/Params.h	/^class Params{$/;"	class	line:21
+MAX_NNB	/home/eugene/Cloud-Computing-UIUC/mp2/Params.h	/^	int MAX_NNB;                \/\/ max number of neighbors$/;"	member	line:23	class:Params
+SINGLE_FAILURE	/home/eugene/Cloud-Computing-UIUC/mp2/Params.h	/^	int SINGLE_FAILURE;			\/\/ single\/multi failure$/;"	member	line:24	class:Params
+MSG_DROP_PROB	/home/eugene/Cloud-Computing-UIUC/mp2/Params.h	/^	double MSG_DROP_PROB;		\/\/ message drop probability$/;"	member	line:25	class:Params
+STEP_RATE	/home/eugene/Cloud-Computing-UIUC/mp2/Params.h	/^	double STEP_RATE;		    \/\/ dictates the rate of insertion$/;"	member	line:26	class:Params
+EN_GPSZ	/home/eugene/Cloud-Computing-UIUC/mp2/Params.h	/^	int EN_GPSZ;			    \/\/ actual number of peers$/;"	member	line:27	class:Params
+MAX_MSG_SIZE	/home/eugene/Cloud-Computing-UIUC/mp2/Params.h	/^	int MAX_MSG_SIZE;$/;"	member	line:28	class:Params
+DROP_MSG	/home/eugene/Cloud-Computing-UIUC/mp2/Params.h	/^	int DROP_MSG;$/;"	member	line:29	class:Params
+dropmsg	/home/eugene/Cloud-Computing-UIUC/mp2/Params.h	/^	int dropmsg;$/;"	member	line:30	class:Params
+globaltime	/home/eugene/Cloud-Computing-UIUC/mp2/Params.h	/^	int globaltime;$/;"	member	line:31	class:Params
+allNodesJoined	/home/eugene/Cloud-Computing-UIUC/mp2/Params.h	/^	int allNodesJoined;$/;"	member	line:32	class:Params
+PORTNUM	/home/eugene/Cloud-Computing-UIUC/mp2/Params.h	/^	short PORTNUM;$/;"	member	line:33	class:Params
+CRUDTEST	/home/eugene/Cloud-Computing-UIUC/mp2/Params.h	/^	int CRUDTEST;$/;"	member	line:34	class:Params
+CFLAGS	/home/eugene/Cloud-Computing-UIUC/mp2/Makefile	/^CFLAGS =  -Wall -g -std=c++11$/;"	macro	line:10
+MP1Node	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^MP1Node::MP1Node(Member *member, Params *params, EmulNet *emul, Log *log, Address *address) {$/;"	function	line:20	class:MP1Node	signature:(Member *member, Params *params, EmulNet *emul, Log *log, Address *address)
+recvLoop	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^int MP1Node::recvLoop() {$/;"	function	line:42	class:MP1Node	signature:()
+enqueueWrapper	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^int MP1Node::enqueueWrapper(void *env, char *buff, int size) {$/;"	function	line:56	class:MP1Node	signature:(void *env, char *buff, int size)
+nodeStart	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^void MP1Node::nodeStart(char *servaddrstr, short servport) {$/;"	function	line:68	class:MP1Node	signature:(char *servaddrstr, short servport)
+initThisNode	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^int MP1Node::initThisNode(Address *joinaddr) {$/;"	function	line:96	class:MP1Node	signature:(Address *joinaddr)
+introduceSelfToGroup	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^int MP1Node::introduceSelfToGroup(Address *joinaddr) {$/;"	function	line:121	class:MP1Node	signature:(Address *joinaddr)
+finishUpThisNode	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^int MP1Node::finishUpThisNode(){$/;"	function	line:163	class:MP1Node	signature:()
+nodeLoop	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^void MP1Node::nodeLoop() {$/;"	function	line:176	class:MP1Node	signature:()
+checkMessages	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^void MP1Node::checkMessages() {$/;"	function	line:198	class:MP1Node	signature:()
+recvCallBack	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^bool MP1Node::recvCallBack(void *env, char *data, int size) {$/;"	function	line:216	class:MP1Node	signature:(void *env, char *data, int size)
+nodeLoopOps	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^void MP1Node::nodeLoopOps() {$/;"	function	line:275	class:MP1Node	signature:()
+CheckFailure	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^void MP1Node::CheckFailure() {$/;"	function	line:293	class:MP1Node	signature:()
+updateMembershipList	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^void MP1Node::updateMembershipList(int id, short port, long heartbeat, long timestamp) {$/;"	function	line:323	class:MP1Node	signature:(int id, short port, long heartbeat, long timestamp)
+initMemberListTable	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^void MP1Node::initMemberListTable(Member *memberNode, int id, short port) {$/;"	function	line:359	class:MP1Node	signature:(Member *memberNode, int id, short port)
+pingOtherNodes	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^bool MP1Node::pingOtherNodes() {$/;"	function	line:372	class:MP1Node	signature:()
+SerializeData	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^char* MP1Node::SerializeData(char* buffer) {$/;"	function	line:399	class:MP1Node	signature:(char* buffer)
+DeserializeData	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^vector<MemberListEntry> MP1Node::DeserializeData(char* table, int rows) {$/;"	function	line:425	class:MP1Node	signature:(char* table, int rows)
+getAddress	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^Address MP1Node::getAddress(int id, short port) {$/;"	function	line:458	class:MP1Node	signature:(int id, short port)
+isNullAddress	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^int MP1Node::isNullAddress(Address *addr) {$/;"	function	line:470	class:MP1Node	signature:(Address *addr)
+getJoinAddress	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^Address MP1Node::getJoinAddress() {$/;"	function	line:479	class:MP1Node	signature:()
+printAddress	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.cpp	/^void MP1Node::printAddress(Address *addr)$/;"	function	line:494	class:MP1Node	signature:(Address *addr)
+Entry	/home/eugene/Cloud-Computing-UIUC/mp2/Entry.h	/^class Entry{$/;"	class	line:15
+value	/home/eugene/Cloud-Computing-UIUC/mp2/Entry.h	/^	string value;$/;"	member	line:17	class:Entry
+timestamp	/home/eugene/Cloud-Computing-UIUC/mp2/Entry.h	/^	int timestamp;$/;"	member	line:18	class:Entry
+replica	/home/eugene/Cloud-Computing-UIUC/mp2/Entry.h	/^	ReplicaType replica;$/;"	member	line:19	class:Entry
+delimiter	/home/eugene/Cloud-Computing-UIUC/mp2/Entry.h	/^	string delimiter;$/;"	member	line:20	class:Entry
+QUEUE_H_	/home/eugene/Cloud-Computing-UIUC/mp2/Queue.h	/^#define QUEUE_H_$/;"	macro	line:8
+Queue	/home/eugene/Cloud-Computing-UIUC/mp2/Queue.h	/^class Queue {$/;"	class	line:18
+Queue	/home/eugene/Cloud-Computing-UIUC/mp2/Queue.h	/^	Queue() {}$/;"	function	line:20	class:Queue	signature:()
+~Queue	/home/eugene/Cloud-Computing-UIUC/mp2/Queue.h	/^	virtual ~Queue() {}$/;"	function	line:21	class:Queue	signature:()
+enqueue	/home/eugene/Cloud-Computing-UIUC/mp2/Queue.h	/^	static bool enqueue(queue<q_elt> *queue, void *buffer, int size) {$/;"	function	line:22	class:Queue	signature:(queue<q_elt> *queue, void *buffer, int size)
+_LOG_H_	/home/eugene/Cloud-Computing-UIUC/mp2/Log.h	/^#define _LOG_H_$/;"	macro	line:8
+MAXWRITES	/home/eugene/Cloud-Computing-UIUC/mp2/Log.h	/^#define MAXWRITES /;"	macro	line:18
+MAGIC_NUMBER	/home/eugene/Cloud-Computing-UIUC/mp2/Log.h	/^#define MAGIC_NUMBER /;"	macro	line:19
+DBG_LOG	/home/eugene/Cloud-Computing-UIUC/mp2/Log.h	/^#define DBG_LOG /;"	macro	line:20
+STATS_LOG	/home/eugene/Cloud-Computing-UIUC/mp2/Log.h	/^#define STATS_LOG /;"	macro	line:21
+Log	/home/eugene/Cloud-Computing-UIUC/mp2/Log.h	/^class Log{$/;"	class	line:28
+par	/home/eugene/Cloud-Computing-UIUC/mp2/Log.h	/^	Params *par;$/;"	member	line:30	class:Log
+firstTime	/home/eugene/Cloud-Computing-UIUC/mp2/Log.h	/^	bool firstTime;$/;"	member	line:31	class:Log
+NODE_H_	/home/eugene/Cloud-Computing-UIUC/mp2/Node.h	/^#define NODE_H_$/;"	macro	line:8
+Node	/home/eugene/Cloud-Computing-UIUC/mp2/Node.h	/^class Node {$/;"	class	line:13
+nodeAddress	/home/eugene/Cloud-Computing-UIUC/mp2/Node.h	/^	Address nodeAddress;$/;"	member	line:15	class:Node
+nodeHashCode	/home/eugene/Cloud-Computing-UIUC/mp2/Node.h	/^	size_t nodeHashCode;$/;"	member	line:16	class:Node
+hashFunc	/home/eugene/Cloud-Computing-UIUC/mp2/Node.h	/^	std::hash<string> hashFunc;$/;"	member	line:17	class:Node
+MESSAGE_H_	/home/eugene/Cloud-Computing-UIUC/mp2/Message.h	/^#define MESSAGE_H_$/;"	macro	line:7
+Message	/home/eugene/Cloud-Computing-UIUC/mp2/Message.h	/^class Message{$/;"	class	line:18
+type	/home/eugene/Cloud-Computing-UIUC/mp2/Message.h	/^	MessageType type;$/;"	member	line:20	class:Message
+replica	/home/eugene/Cloud-Computing-UIUC/mp2/Message.h	/^	ReplicaType replica;$/;"	member	line:21	class:Message
+key	/home/eugene/Cloud-Computing-UIUC/mp2/Message.h	/^	string key;$/;"	member	line:22	class:Message
+value	/home/eugene/Cloud-Computing-UIUC/mp2/Message.h	/^	string value;$/;"	member	line:23	class:Message
+fromAddr	/home/eugene/Cloud-Computing-UIUC/mp2/Message.h	/^	Address fromAddr;$/;"	member	line:24	class:Message
+transID	/home/eugene/Cloud-Computing-UIUC/mp2/Message.h	/^	int transID;$/;"	member	line:25	class:Message
+success	/home/eugene/Cloud-Computing-UIUC/mp2/Message.h	/^	bool success; \/\/ success or not $/;"	member	line:26	class:Message
+delimiter	/home/eugene/Cloud-Computing-UIUC/mp2/Message.h	/^	string delimiter;$/;"	member	line:28	class:Message
+q_elt	/home/eugene/Cloud-Computing-UIUC/mp2/Member.cpp	/^q_elt::q_elt(void *elt, int size): elt(elt), size(size) {}$/;"	function	line:12	class:q_elt	signature:(void *elt, int size)
+Address	/home/eugene/Cloud-Computing-UIUC/mp2/Member.cpp	/^Address::Address(const Address &anotherAddress) {$/;"	function	line:17	class:Address	signature:(const Address &anotherAddress)
+operator =	/home/eugene/Cloud-Computing-UIUC/mp2/Member.cpp	/^Address& Address::operator =(const Address& anotherAddress) {$/;"	function	line:25	class:Address	signature:(const Address& anotherAddress)
+operator ==	/home/eugene/Cloud-Computing-UIUC/mp2/Member.cpp	/^bool Address::operator ==(const Address& anotherAddress) {$/;"	function	line:34	class:Address	signature:(const Address& anotherAddress)
+MemberListEntry	/home/eugene/Cloud-Computing-UIUC/mp2/Member.cpp	/^MemberListEntry::MemberListEntry(int id, short port, long heartbeat, long timestamp): id(id), port(port), heartbeat(heartbeat), timestamp(timestamp) {}$/;"	function	line:41	class:MemberListEntry	signature:(int id, short port, long heartbeat, long timestamp)
+MemberListEntry	/home/eugene/Cloud-Computing-UIUC/mp2/Member.cpp	/^MemberListEntry::MemberListEntry(int id, short port): id(id), port(port) {}$/;"	function	line:46	class:MemberListEntry	signature:(int id, short port)
+MemberListEntry	/home/eugene/Cloud-Computing-UIUC/mp2/Member.cpp	/^MemberListEntry::MemberListEntry(const MemberListEntry &anotherMLE) {$/;"	function	line:51	class:MemberListEntry	signature:(const MemberListEntry &anotherMLE)
+operator =	/home/eugene/Cloud-Computing-UIUC/mp2/Member.cpp	/^MemberListEntry& MemberListEntry::operator =(const MemberListEntry &anotherMLE) {$/;"	function	line:61	class:MemberListEntry	signature:(const MemberListEntry &anotherMLE)
+getid	/home/eugene/Cloud-Computing-UIUC/mp2/Member.cpp	/^int MemberListEntry::getid() {$/;"	function	line:75	class:MemberListEntry	signature:()
+getport	/home/eugene/Cloud-Computing-UIUC/mp2/Member.cpp	/^short MemberListEntry::getport() {$/;"	function	line:84	class:MemberListEntry	signature:()
+getheartbeat	/home/eugene/Cloud-Computing-UIUC/mp2/Member.cpp	/^long MemberListEntry::getheartbeat() {$/;"	function	line:93	class:MemberListEntry	signature:()
+gettimestamp	/home/eugene/Cloud-Computing-UIUC/mp2/Member.cpp	/^long MemberListEntry::gettimestamp() {$/;"	function	line:102	class:MemberListEntry	signature:()
+setid	/home/eugene/Cloud-Computing-UIUC/mp2/Member.cpp	/^void MemberListEntry::setid(int id) {$/;"	function	line:111	class:MemberListEntry	signature:(int id)
+setport	/home/eugene/Cloud-Computing-UIUC/mp2/Member.cpp	/^void MemberListEntry::setport(short port) {$/;"	function	line:120	class:MemberListEntry	signature:(short port)
+setheartbeat	/home/eugene/Cloud-Computing-UIUC/mp2/Member.cpp	/^void MemberListEntry::setheartbeat(long hearbeat) {$/;"	function	line:129	class:MemberListEntry	signature:(long hearbeat)
+settimestamp	/home/eugene/Cloud-Computing-UIUC/mp2/Member.cpp	/^void MemberListEntry::settimestamp(long timestamp) {$/;"	function	line:138	class:MemberListEntry	signature:(long timestamp)
+Member	/home/eugene/Cloud-Computing-UIUC/mp2/Member.cpp	/^Member::Member(const Member &anotherMember) {$/;"	function	line:145	class:Member	signature:(const Member &anotherMember)
+operator =	/home/eugene/Cloud-Computing-UIUC/mp2/Member.cpp	/^Member& Member::operator =(const Member& anotherMember) {$/;"	function	line:163	class:Member	signature:(const Member& anotherMember)
+_APPLICATION_H_	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^#define _APPLICATION_H_$/;"	macro	line:8
+nodeCount	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^int nodeCount = 0;$/;"	variable	line:24
+alphanum	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^static const char alphanum[] =$/;"	variable	line:25
+ARGS_COUNT	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^#define ARGS_COUNT /;"	macro	line:33
+TOTAL_RUNNING_TIME	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^#define TOTAL_RUNNING_TIME /;"	macro	line:34
+INSERT_TIME	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^#define INSERT_TIME /;"	macro	line:35
+TEST_TIME	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^#define TEST_TIME /;"	macro	line:36
+STABILIZE_TIME	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^#define STABILIZE_TIME /;"	macro	line:37
+FIRST_FAIL_TIME	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^#define FIRST_FAIL_TIME /;"	macro	line:38
+LAST_FAIL_TIME	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^#define LAST_FAIL_TIME /;"	macro	line:39
+RF	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^#define RF /;"	macro	line:40
+NUMBER_OF_INSERTS	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^#define NUMBER_OF_INSERTS /;"	macro	line:41
+KEY_LENGTH	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^#define KEY_LENGTH /;"	macro	line:42
+Application	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^class Application{$/;"	class	line:49
+JOINADDR	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^	char JOINADDR[30];$/;"	member	line:53	class:Application
+en	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^	EmulNet *en;$/;"	member	line:54	class:Application
+en1	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^	EmulNet *en1;$/;"	member	line:55	class:Application
+log	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^    Log *log;$/;"	member	line:56	class:Application
+mp1	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^	MP1Node **mp1;$/;"	member	line:57	class:Application
+mp2	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^	MP2Node **mp2;$/;"	member	line:58	class:Application
+par	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^	Params *par;$/;"	member	line:59	class:Application
+testKVPairs	/home/eugene/Cloud-Computing-UIUC/mp2/Application.h	/^	map<string, string> testKVPairs;$/;"	member	line:60	class:Application
+_EMULNET_H_	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^#define _EMULNET_H_$/;"	macro	line:8
+MAX_NODES	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^#define MAX_NODES /;"	macro	line:10
+MAX_TIME	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^#define MAX_TIME /;"	macro	line:11
+ENBUFFSIZE	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^#define ENBUFFSIZE /;"	macro	line:12
+en_msg	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^typedef struct en_msg {$/;"	struct	line:23
+size	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	int size;$/;"	member	line:25	struct:en_msg
+from	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	Address from;$/;"	member	line:27	struct:en_msg
+to	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	Address to;$/;"	member	line:29	struct:en_msg
+en_msg	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^}en_msg;$/;"	typedef	line:30	typeref:struct:en_msg
+EM	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^class EM {$/;"	class	line:35
+nextid	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	int nextid;$/;"	member	line:37	class:EM
+currbuffsize	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	int currbuffsize;$/;"	member	line:38	class:EM
+firsteltindex	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	int firsteltindex;$/;"	member	line:39	class:EM
+buff	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	en_msg* buff[ENBUFFSIZE];$/;"	member	line:40	class:EM
+EM	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	EM() {}$/;"	function	line:41	class:EM	signature:()
+operator =	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	EM& operator = (EM &anotherEM) {$/;"	function	line:42	class:EM	signature:(EM &anotherEM)
+getNextId	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	int getNextId() {$/;"	function	line:53	class:EM	signature:()
+getCurrBuffSize	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	int getCurrBuffSize() {$/;"	function	line:56	class:EM	signature:()
+getFirstEltIndex	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	int getFirstEltIndex() {$/;"	function	line:59	class:EM	signature:()
+setNextId	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	void setNextId(int nextid) {$/;"	function	line:62	class:EM	signature:(int nextid)
+settCurrBuffSize	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	void settCurrBuffSize(int currbuffsize) {$/;"	function	line:65	class:EM	signature:(int currbuffsize)
+setFirstEltIndex	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	void setFirstEltIndex(int firsteltindex) {$/;"	function	line:68	class:EM	signature:(int firsteltindex)
+~EM	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	virtual ~EM() {}$/;"	function	line:71	class:EM	signature:()
+EmulNet	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^class EmulNet$/;"	class	line:79
+par	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	Params* par;$/;"	member	line:82	class:EmulNet
+sent_msgs	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	int sent_msgs[MAX_NODES + 1][MAX_TIME];$/;"	member	line:83	class:EmulNet
+recv_msgs	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	int recv_msgs[MAX_NODES + 1][MAX_TIME];$/;"	member	line:84	class:EmulNet
+enInited	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	int enInited;$/;"	member	line:85	class:EmulNet
+emulnet	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.h	/^	EM emulnet;$/;"	member	line:86	class:EmulNet
+_MP1NODE_H_	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.h	/^#define _MP1NODE_H_$/;"	macro	line:9
+TREMOVE	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.h	/^#define TREMOVE /;"	macro	line:21
+TFAIL	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.h	/^#define TFAIL /;"	macro	line:22
+TPING	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.h	/^#define TPING /;"	macro	line:23
+MsgTypes	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.h	/^enum MsgTypes{$/;"	enum	line:31
+JOINREQ	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.h	/^    JOINREQ,$/;"	enumerator	line:32	enum:MsgTypes
+JOINREP	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.h	/^    JOINREP,$/;"	enumerator	line:33	enum:MsgTypes
+PING	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.h	/^    PING,$/;"	enumerator	line:34	enum:MsgTypes
+DUMMYLASTMSGTYPE	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.h	/^    DUMMYLASTMSGTYPE$/;"	enumerator	line:35	enum:MsgTypes
+MessageHdr	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.h	/^typedef struct MessageHdr {$/;"	struct	line:43
+msgType	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.h	/^	enum MsgTypes msgType;$/;"	member	line:44	struct:MessageHdr	typeref:enum:MessageHdr::MsgTypes
+MessageHdr	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.h	/^}MessageHdr;$/;"	typedef	line:45	typeref:struct:MessageHdr
+MP1Node	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.h	/^class MP1Node {$/;"	class	line:52
+emulNet	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.h	/^	EmulNet *emulNet;$/;"	member	line:54	class:MP1Node
+log	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.h	/^	Log *log;$/;"	member	line:55	class:MP1Node
+par	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.h	/^	Params *par;$/;"	member	line:56	class:MP1Node
+memberNode	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.h	/^	Member *memberNode;$/;"	member	line:57	class:MP1Node
+NULLADDR	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.h	/^	char NULLADDR[6];$/;"	member	line:58	class:MP1Node
+getMemberNode	/home/eugene/Cloud-Computing-UIUC/mp2/MP1Node.h	/^	Member * getMemberNode() {$/;"	function	line:62	class:MP1Node	signature:()
+Log	/home/eugene/Cloud-Computing-UIUC/mp2/Log.cpp	/^Log::Log(Params *p) {$/;"	function	line:12	class:Log	signature:(Params *p)
+Log	/home/eugene/Cloud-Computing-UIUC/mp2/Log.cpp	/^Log::Log(const Log &anotherLog) {$/;"	function	line:20	class:Log	signature:(const Log &anotherLog)
+operator =	/home/eugene/Cloud-Computing-UIUC/mp2/Log.cpp	/^Log& Log::operator = (const Log& anotherLog) {$/;"	function	line:28	class:Log	signature:(const Log& anotherLog)
+~Log	/home/eugene/Cloud-Computing-UIUC/mp2/Log.cpp	/^Log::~Log() {}$/;"	function	line:37	class:Log	signature:()
+LOG	/home/eugene/Cloud-Computing-UIUC/mp2/Log.cpp	/^void Log::LOG(Address *addr, const char * str, ...) {$/;"	function	line:44	class:Log	signature:(Address *addr, const char * str, ...)
+logNodeAdd	/home/eugene/Cloud-Computing-UIUC/mp2/Log.cpp	/^void Log::logNodeAdd(Address *thisNode, Address *addedAddr) {$/;"	function	line:116	class:Log	signature:(Address *thisNode, Address *addedAddr)
+logNodeRemove	/home/eugene/Cloud-Computing-UIUC/mp2/Log.cpp	/^void Log::logNodeRemove(Address *thisNode, Address *removedAddr) {$/;"	function	line:127	class:Log	signature:(Address *thisNode, Address *removedAddr)
+logCreateSuccess	/home/eugene/Cloud-Computing-UIUC/mp2/Log.cpp	/^void Log::logCreateSuccess(Address * address, bool isCoordinator, int transID, string key, string value){$/;"	function	line:138	class:Log	signature:(Address * address, bool isCoordinator, int transID, string key, string value)
+logReadSuccess	/home/eugene/Cloud-Computing-UIUC/mp2/Log.cpp	/^void Log::logReadSuccess(Address * address, bool isCoordinator, int transID, string key, string value){$/;"	function	line:154	class:Log	signature:(Address * address, bool isCoordinator, int transID, string key, string value)
+logUpdateSuccess	/home/eugene/Cloud-Computing-UIUC/mp2/Log.cpp	/^void Log::logUpdateSuccess(Address * address, bool isCoordinator, int transID, string key, string newValue){$/;"	function	line:170	class:Log	signature:(Address * address, bool isCoordinator, int transID, string key, string newValue)
+logDeleteSuccess	/home/eugene/Cloud-Computing-UIUC/mp2/Log.cpp	/^void Log::logDeleteSuccess(Address * address, bool isCoordinator, int transID, string key){$/;"	function	line:186	class:Log	signature:(Address * address, bool isCoordinator, int transID, string key)
+logCreateFail	/home/eugene/Cloud-Computing-UIUC/mp2/Log.cpp	/^void Log::logCreateFail(Address * address, bool isCoordinator, int transID, string key, string value){$/;"	function	line:202	class:Log	signature:(Address * address, bool isCoordinator, int transID, string key, string value)
+logReadFail	/home/eugene/Cloud-Computing-UIUC/mp2/Log.cpp	/^void Log::logReadFail(Address * address, bool isCoordinator, int transID, string key){$/;"	function	line:219	class:Log	signature:(Address * address, bool isCoordinator, int transID, string key)
+logUpdateFail	/home/eugene/Cloud-Computing-UIUC/mp2/Log.cpp	/^void Log::logUpdateFail(Address * address, bool isCoordinator, int transID, string key, string newValue){$/;"	function	line:235	class:Log	signature:(Address * address, bool isCoordinator, int transID, string key, string newValue)
+logDeleteFail	/home/eugene/Cloud-Computing-UIUC/mp2/Log.cpp	/^void Log::logDeleteFail(Address * address, bool isCoordinator, int transID, string key){$/;"	function	line:251	class:Log	signature:(Address * address, bool isCoordinator, int transID, string key)
+Node	/home/eugene/Cloud-Computing-UIUC/mp2/Node.cpp	/^Node::Node() {}$/;"	function	line:12	class:Node	signature:()
+Node	/home/eugene/Cloud-Computing-UIUC/mp2/Node.cpp	/^Node::Node(Address address) {$/;"	function	line:17	class:Node	signature:(Address address)
+~Node	/home/eugene/Cloud-Computing-UIUC/mp2/Node.cpp	/^Node::~Node() {}$/;"	function	line:25	class:Node	signature:()
+computeHashCode	/home/eugene/Cloud-Computing-UIUC/mp2/Node.cpp	/^void Node::computeHashCode() {$/;"	function	line:32	class:Node	signature:()
+Node	/home/eugene/Cloud-Computing-UIUC/mp2/Node.cpp	/^Node::Node(const Node& another) {$/;"	function	line:39	class:Node	signature:(const Node& another)
+operator =	/home/eugene/Cloud-Computing-UIUC/mp2/Node.cpp	/^Node& Node::operator=(const Node& another) {$/;"	function	line:47	class:Node	signature:(const Node& another)
+operator <	/home/eugene/Cloud-Computing-UIUC/mp2/Node.cpp	/^bool Node::operator < (const Node& another) const {$/;"	function	line:56	class:Node	signature:(const Node& another) const
+getHashCode	/home/eugene/Cloud-Computing-UIUC/mp2/Node.cpp	/^size_t Node::getHashCode() {$/;"	function	line:65	class:Node	signature:()
+getAddress	/home/eugene/Cloud-Computing-UIUC/mp2/Node.cpp	/^Address * Node::getAddress() {$/;"	function	line:74	class:Node	signature:()
+setHashCode	/home/eugene/Cloud-Computing-UIUC/mp2/Node.cpp	/^void Node::setHashCode(size_t hashCode) {$/;"	function	line:83	class:Node	signature:(size_t hashCode)
+setAddress	/home/eugene/Cloud-Computing-UIUC/mp2/Node.cpp	/^void Node::setAddress(Address address) {$/;"	function	line:92	class:Node	signature:(Address address)
+HashTable	/home/eugene/Cloud-Computing-UIUC/mp2/HashTable.cpp	/^HashTable::HashTable() {}$/;"	function	line:9	class:HashTable	signature:()
+~HashTable	/home/eugene/Cloud-Computing-UIUC/mp2/HashTable.cpp	/^HashTable::~HashTable() {}$/;"	function	line:11	class:HashTable	signature:()
+create	/home/eugene/Cloud-Computing-UIUC/mp2/HashTable.cpp	/^bool HashTable::create(string key, string value) {$/;"	function	line:22	class:HashTable	signature:(string key, string value)
+read	/home/eugene/Cloud-Computing-UIUC/mp2/HashTable.cpp	/^string HashTable::read(string key) {$/;"	function	line:36	class:HashTable	signature:(string key)
+update	/home/eugene/Cloud-Computing-UIUC/mp2/HashTable.cpp	/^bool HashTable::update(string key, string newValue) {$/;"	function	line:60	class:HashTable	signature:(string key, string newValue)
+deleteKey	/home/eugene/Cloud-Computing-UIUC/mp2/HashTable.cpp	/^bool HashTable::deleteKey(string key) {$/;"	function	line:83	class:HashTable	signature:(string key)
+isEmpty	/home/eugene/Cloud-Computing-UIUC/mp2/HashTable.cpp	/^bool HashTable::isEmpty() {$/;"	function	line:108	class:HashTable	signature:()
+currentSize	/home/eugene/Cloud-Computing-UIUC/mp2/HashTable.cpp	/^unsigned long HashTable::currentSize() {$/;"	function	line:120	class:HashTable	signature:()
+clear	/home/eugene/Cloud-Computing-UIUC/mp2/HashTable.cpp	/^void HashTable::clear() {$/;"	function	line:129	class:HashTable	signature:()
+count	/home/eugene/Cloud-Computing-UIUC/mp2/HashTable.cpp	/^unsigned long HashTable::count(string key) {$/;"	function	line:141	class:HashTable	signature:(string key)
+HASHTABLE_H_	/home/eugene/Cloud-Computing-UIUC/mp2/HashTable.h	/^#define HASHTABLE_H_$/;"	macro	line:8
+HashTable	/home/eugene/Cloud-Computing-UIUC/mp2/HashTable.h	/^class HashTable {$/;"	class	line:23
+hashTable	/home/eugene/Cloud-Computing-UIUC/mp2/HashTable.h	/^	map<string, string> hashTable;$/;"	member	line:25	class:HashTable
+EmulNet	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.cpp	/^EmulNet::EmulNet(Params *p)$/;"	function	line:12	class:EmulNet	signature:(Params *p)
+EmulNet	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.cpp	/^EmulNet::EmulNet(EmulNet &anotherEmulNet) {$/;"	function	line:32	class:EmulNet	signature:(EmulNet &anotherEmulNet)
+operator =	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.cpp	/^EmulNet& EmulNet::operator =(EmulNet &anotherEmulNet) {$/;"	function	line:48	class:EmulNet	signature:(EmulNet &anotherEmulNet)
+~EmulNet	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.cpp	/^EmulNet::~EmulNet() {}$/;"	function	line:65	class:EmulNet	signature:()
+ENinit	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.cpp	/^void *EmulNet::ENinit(Address *myaddr, short port) {$/;"	function	line:72	class:EmulNet	signature:(Address *myaddr, short port)
+ENsend	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.cpp	/^int EmulNet::ENsend(Address *myaddr, Address *toaddr, char *data, int size) {$/;"	function	line:87	class:EmulNet	signature:(Address *myaddr, Address *toaddr, char *data, int size)
+ENsend	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.cpp	/^int EmulNet::ENsend(Address *myaddr, Address *toaddr, string data) {$/;"	function	line:128	class:EmulNet	signature:(Address *myaddr, Address *toaddr, string data)
+ENrecv	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.cpp	/^int EmulNet::ENrecv(Address *myaddr, int (* enq)(void *, char *, int), struct timeval *t, int times, void *queue){$/;"	function	line:144	class:EmulNet	signature:(Address *myaddr, int (* enq)(void *, char *, int), struct timeval *t, int times, void *queue)
+ENcleanup	/home/eugene/Cloud-Computing-UIUC/mp2/EmulNet.cpp	/^int EmulNet::ENcleanup() {$/;"	function	line:184	class:EmulNet	signature:()
+Params	/home/eugene/Cloud-Computing-UIUC/mp2/Params.cpp	/^Params::Params(): PORTNUM(8001) {}$/;"	function	line:12	class:Params	signature:()
+setparams	/home/eugene/Cloud-Computing-UIUC/mp2/Params.cpp	/^void Params::setparams(char *config_file) {$/;"	function	line:19	class:Params	signature:(char *config_file)
+getcurrtime	/home/eugene/Cloud-Computing-UIUC/mp2/Params.cpp	/^int Params::getcurrtime(){$/;"	function	line:65	class:Params	signature:()
+Entry	/home/eugene/Cloud-Computing-UIUC/mp2/Entry.cpp	/^Entry::Entry(string _value, int _timestamp, ReplicaType _replica){$/;"	function	line:11	class:Entry	signature:(string _value, int _timestamp, ReplicaType _replica)
+Entry	/home/eugene/Cloud-Computing-UIUC/mp2/Entry.cpp	/^Entry::Entry(string entry){$/;"	function	line:23	class:Entry	signature:(string entry)
+convertToString	/home/eugene/Cloud-Computing-UIUC/mp2/Entry.cpp	/^string Entry::convertToString() {$/;"	function	line:46	class:Entry	signature:()
+MEMBER_H_	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^#define MEMBER_H_$/;"	macro	line:8
+q_elt	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^class q_elt {$/;"	class	line:17
+elt	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	void *elt;$/;"	member	line:19	class:q_elt
+size	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	int size;$/;"	member	line:20	class:q_elt
+Address	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^class Address {$/;"	class	line:29
+addr	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	char addr[6];$/;"	member	line:31	class:Address
+Address	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	Address() {}$/;"	function	line:32	class:Address	signature:()
+Address	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	Address(string address) {$/;"	function	line:38	class:Address	signature:(string address)
+getAddress	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	string getAddress() {$/;"	function	line:45	class:Address	signature:()
+init	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	void init() {$/;"	function	line:52	class:Address	signature:()
+MemberListEntry	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^class MemberListEntry {$/;"	class	line:62
+id	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	int id;$/;"	member	line:64	class:MemberListEntry
+port	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	short port;$/;"	member	line:65	class:MemberListEntry
+heartbeat	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	long heartbeat;$/;"	member	line:66	class:MemberListEntry
+timestamp	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	long timestamp;$/;"	member	line:67	class:MemberListEntry
+MemberListEntry	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	MemberListEntry(): id(0), port(0), heartbeat(0), timestamp(0) {}$/;"	function	line:70	class:MemberListEntry	signature:()
+Member	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^class Member {$/;"	class	line:89
+addr	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	Address addr;$/;"	member	line:92	class:Member
+inited	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	bool inited;$/;"	member	line:94	class:Member
+inGroup	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	bool inGroup;$/;"	member	line:96	class:Member
+bFailed	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	bool bFailed;$/;"	member	line:98	class:Member
+nnb	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	int nnb;$/;"	member	line:100	class:Member
+heartbeat	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	long heartbeat;$/;"	member	line:102	class:Member
+pingCounter	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	int pingCounter;$/;"	member	line:104	class:Member
+timeOutCounter	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	int timeOutCounter;$/;"	member	line:106	class:Member
+memberList	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	vector<MemberListEntry> memberList;$/;"	member	line:108	class:Member
+myPos	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	vector<MemberListEntry>::iterator myPos;$/;"	member	line:110	class:Member
+mp1q	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	queue<q_elt> mp1q;$/;"	member	line:112	class:Member
+mp2q	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	queue<q_elt> mp2q;$/;"	member	line:114	class:Member
+Member	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	Member(): inited(false), inGroup(false), bFailed(false), nnb(0), heartbeat(0), pingCounter(0), timeOutCounter(0) {}$/;"	function	line:118	class:Member	signature:()
+~Member	/home/eugene/Cloud-Computing-UIUC/mp2/Member.h	/^	virtual ~Member() {}$/;"	function	line:123	class:Member	signature:()
+COMMON_H_	/home/eugene/Cloud-Computing-UIUC/mp2/common.h	/^#define COMMON_H_$/;"	macro	line:2
+g_transID	/home/eugene/Cloud-Computing-UIUC/mp2/common.h	/^static int g_transID = -1;$/;"	variable	line:8
+MessageType	/home/eugene/Cloud-Computing-UIUC/mp2/common.h	/^enum MessageType {CREATE, READ, UPDATE, DELETE, REPLY, READREPLY};$/;"	enum	line:11
+CREATE	/home/eugene/Cloud-Computing-UIUC/mp2/common.h	/^enum MessageType {CREATE, READ, UPDATE, DELETE, REPLY, READREPLY};$/;"	enumerator	line:11	enum:MessageType
+READ	/home/eugene/Cloud-Computing-UIUC/mp2/common.h	/^enum MessageType {CREATE, READ, UPDATE, DELETE, REPLY, READREPLY};$/;"	enumerator	line:11	enum:MessageType
+UPDATE	/home/eugene/Cloud-Computing-UIUC/mp2/common.h	/^enum MessageType {CREATE, READ, UPDATE, DELETE, REPLY, READREPLY};$/;"	enumerator	line:11	enum:MessageType
+DELETE	/home/eugene/Cloud-Computing-UIUC/mp2/common.h	/^enum MessageType {CREATE, READ, UPDATE, DELETE, REPLY, READREPLY};$/;"	enumerator	line:11	enum:MessageType
+REPLY	/home/eugene/Cloud-Computing-UIUC/mp2/common.h	/^enum MessageType {CREATE, READ, UPDATE, DELETE, REPLY, READREPLY};$/;"	enumerator	line:11	enum:MessageType
+READREPLY	/home/eugene/Cloud-Computing-UIUC/mp2/common.h	/^enum MessageType {CREATE, READ, UPDATE, DELETE, REPLY, READREPLY};$/;"	enumerator	line:11	enum:MessageType
+ReplicaType	/home/eugene/Cloud-Computing-UIUC/mp2/common.h	/^enum ReplicaType {PRIMARY, SECONDARY, TERTIARY};$/;"	enum	line:13
+PRIMARY	/home/eugene/Cloud-Computing-UIUC/mp2/common.h	/^enum ReplicaType {PRIMARY, SECONDARY, TERTIARY};$/;"	enumerator	line:13	enum:ReplicaType
+SECONDARY	/home/eugene/Cloud-Computing-UIUC/mp2/common.h	/^enum ReplicaType {PRIMARY, SECONDARY, TERTIARY};$/;"	enumerator	line:13	enum:ReplicaType
+TERTIARY	/home/eugene/Cloud-Computing-UIUC/mp2/common.h	/^enum ReplicaType {PRIMARY, SECONDARY, TERTIARY};$/;"	enumerator	line:13	enum:ReplicaType
+MP2NODE_H_	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.h	/^#define MP2NODE_H_$/;"	macro	line:8
+REPLICA_NUMBER	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.h	/^#define  REPLICA_NUMBER /;"	macro	line:22
+QUORUM_NUMBER	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.h	/^#define  QUORUM_NUMBER /;"	macro	line:23
+TRANSACTION_TIMEOUT	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.h	/^#define  TRANSACTION_TIMEOUT /;"	macro	line:24
+STABLIZER_TRANS	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.h	/^#define  STABLIZER_TRANS /;"	macro	line:25
+Transaction	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.h	/^typedef tuple<Message, int, int> Transaction;$/;"	typedef	line:27
+MP2Node	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.h	/^class MP2Node {$/;"	class	line:39
+hasMyReplicas	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.h	/^	vector<Node> hasMyReplicas;$/;"	member	line:42	class:MP2Node
+haveReplicasOf	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.h	/^	vector<Node> haveReplicasOf;$/;"	member	line:44	class:MP2Node
+ring	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.h	/^	vector<Node> ring;$/;"	member	line:46	class:MP2Node
+ht	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.h	/^	HashTable * ht;$/;"	member	line:48	class:MP2Node
+memberNode	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.h	/^	Member *memberNode;$/;"	member	line:50	class:MP2Node
+par	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.h	/^	Params *par;$/;"	member	line:52	class:MP2Node
+emulNet	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.h	/^	EmulNet * emulNet;$/;"	member	line:54	class:MP2Node
+log	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.h	/^	Log * log;$/;"	member	line:56	class:MP2Node
+isCoordinator	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.h	/^	bool isCoordinator = false;$/;"	member	line:58	class:MP2Node
+transactions	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.h	/^	map<int, Transaction> transactions;$/;"	member	line:60	class:MP2Node
+getMemberNode	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.h	/^	Member * getMemberNode() {$/;"	function	line:82	class:MP2Node	signature:()
+MP2Node	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^MP2Node::MP2Node(Member *memberNode, Params *par, EmulNet * emulNet, Log * log, Address * address) {$/;"	function	line:12	class:MP2Node	signature:(Member *memberNode, Params *par, EmulNet * emulNet, Log * log, Address * address)
+~MP2Node	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^MP2Node::~MP2Node() {$/;"	function	line:24	class:MP2Node	signature:()
+updateRing	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^void MP2Node::updateRing() {$/;"	function	line:38	class:MP2Node	signature:()
+getMembershipList	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^vector<Node> MP2Node::getMembershipList() {$/;"	function	line:100	class:MP2Node	signature:()
+hashFunction	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^size_t MP2Node::hashFunction(string key) {$/;"	function	line:126	class:MP2Node	signature:(string key)
+clientCreate	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^void MP2Node::clientCreate(string key, string value) {$/;"	function	line:141	class:MP2Node	signature:(string key, string value)
+clientRead	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^void MP2Node::clientRead(string key){$/;"	function	line:170	class:MP2Node	signature:(string key)
+clientUpdate	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^void MP2Node::clientUpdate(string key, string value){$/;"	function	line:193	class:MP2Node	signature:(string key, string value)
+clientDelete	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^void MP2Node::clientDelete(string key){$/;"	function	line:222	class:MP2Node	signature:(string key)
+createKeyValue	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^bool MP2Node::createKeyValue(string key, string value, ReplicaType replica) {$/;"	function	line:244	class:MP2Node	signature:(string key, string value, ReplicaType replica)
+readKey	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^string MP2Node::readKey(string key) {$/;"	function	line:263	class:MP2Node	signature:(string key)
+updateKeyValue	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^bool MP2Node::updateKeyValue(string key, string value, ReplicaType replica) {$/;"	function	line:281	class:MP2Node	signature:(string key, string value, ReplicaType replica)
+deletekey	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^bool MP2Node::deletekey(string key) {$/;"	function	line:300	class:MP2Node	signature:(string key)
+checkMessages	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^void MP2Node::checkMessages() {$/;"	function	line:319	class:MP2Node	signature:()
+msg_create_handler	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^void MP2Node::msg_create_handler(Message *msg) {$/;"	function	line:374	class:MP2Node	signature:(Message *msg)
+msg_read_handler	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^void MP2Node::msg_read_handler(Message *msg) {$/;"	function	line:388	class:MP2Node	signature:(Message *msg)
+msg_update_handler	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^void MP2Node::msg_update_handler(Message *msg) {$/;"	function	line:403	class:MP2Node	signature:(Message *msg)
+msg_delete_handler	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^void MP2Node::msg_delete_handler(Message *msg) {$/;"	function	line:415	class:MP2Node	signature:(Message *msg)
+msg_reply_handler	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^void MP2Node::msg_reply_handler(Message *msg) {$/;"	function	line:427	class:MP2Node	signature:(Message *msg)
+msg_readreply_handler	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^void MP2Node::msg_readreply_handler(Message *msg) {$/;"	function	line:476	class:MP2Node	signature:(Message *msg)
+get_transaction	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^Message *MP2Node::get_transaction(int transID) {$/;"	function	line:492	class:MP2Node	signature:(int transID)
+get_transaction_type	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^MessageType MP2Node::get_transaction_type(int transID) {$/;"	function	line:496	class:MP2Node	signature:(int transID)
+trans_success_counter	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^int MP2Node::trans_success_counter(int transID) {$/;"	function	line:503	class:MP2Node	signature:(int transID)
+trans_timeout_counter	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^int MP2Node::trans_timeout_counter(int transID) {$/;"	function	line:509	class:MP2Node	signature:(int transID)
+trans_invalidate	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^void MP2Node::trans_invalidate(int transID) {$/;"	function	line:515	class:MP2Node	signature:(int transID)
+findNodes	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^vector<Node> MP2Node::findNodes(string key) {$/;"	function	line:526	class:MP2Node	signature:(string key)
+recvLoop	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^bool MP2Node::recvLoop() {$/;"	function	line:557	class:MP2Node	signature:()
+enqueueWrapper	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^int MP2Node::enqueueWrapper(void *env, char *buff, int size) {$/;"	function	line:571	class:MP2Node	signature:(void *env, char *buff, int size)
+stabilizationProtocol	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^void MP2Node::stabilizationProtocol(vector<Node> curNeighbors) {$/;"	function	line:585	class:MP2Node	signature:(vector<Node> curNeighbors)
+findNeighbors	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^vector<Node> MP2Node::findNeighbors(vector<Node> ringOfNodes) {$/;"	function	line:642	class:MP2Node	signature:(vector<Node> ringOfNodes)
+setNeighbors	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^void MP2Node::setNeighbors(){$/;"	function	line:681	class:MP2Node	signature:()
+isSameNode	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^bool MP2Node::isSameNode(Node n1, Node n2){$/;"	function	line:692	class:MP2Node	signature:(Node n1, Node n2)
+check_for_timeout	/home/eugene/Cloud-Computing-UIUC/mp2/MP2Node.cpp	/^void MP2Node::check_for_timeout(){$/;"	function	line:696	class:MP2Node	signature:()

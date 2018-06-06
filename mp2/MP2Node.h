@@ -19,6 +19,13 @@
 #include "Message.h"
 #include "Queue.h"
 
+#define  REPLICA_NUMBER            3
+#define  QUORUM_NUMBER             2
+#define  TRANSACTION_TIME_LIMIT   10
+#define  STABLIZER_TRANS          -1
+
+typedef tuple<Message, int, int> Transaction;
+
 /**
  * CLASS NAME: MP2Node
  *
@@ -47,6 +54,29 @@ private:
 	EmulNet * emulNet;
 	// Object of Log
 	Log * log;
+	vector<Node>::iterator myPosition;
+
+	bool isCoordinator = false;
+
+	map<int, Transaction> transactions;
+	void msg_create_handler(Message *msg);
+	void msg_read_handler(Message *msg);
+	void msg_update_handler(Message *msg);
+	void msg_delete_handler(Message *msg);
+	void msg_reply_handler(Message *msg);
+	void msg_readreply_handler(Message *msg);
+
+	Message *get_transaction(int transId);
+	MessageType get_transaction_type(int transId);
+
+	int trans_success_counter(int transId);
+	int trans_timeout_counter(int transId);
+	void trans_invalidate(int transId);
+
+	vector<Node> findNeighbors(vector<Node> ringOfNodes);
+	void setNeighbors();
+	bool isSameNode(Node n1, Node n2);
+	void check_for_timeout();
 
 public:
 	MP2Node(Member *memberNode, Params *par, EmulNet *emulNet, Log *log, Address *addressOfMember);
@@ -86,7 +116,7 @@ public:
 	bool deletekey(string key);
 
 	// stabilization protocol - handle multiple failures
-	void stabilizationProtocol();
+	void stabilizationProtocol(vector<Node> curNeighbors);
 
 	~MP2Node();
 };
